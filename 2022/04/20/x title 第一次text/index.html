@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="关于Vue-router@3 push 存在的警告错误​		编程式路由跳转到当前路由(参数不变)，多次执行会抛出NavigationDuplicated的错误警告  频繁点击搜索按钮  ![Snipaste_2022-04-20_22-42-29](x title 第一次text.assets&#x2F;Snipaste_2022-04-20_22-42-29.png)  原因分析 打印push方">
+    <meta name="description" content="关于Vue-router@3 push 存在的警告错误​		编程式路由跳转到当前路由(参数不变)，多次执行会抛出NavigationDuplicated的错误警告  频繁点击搜索按钮 c   原因分析 打印push方法返回值    2.为什么会出现这种错误？ ​		因为promise需要成功或者失败的回调 3.最终解决方式 ​		在路由器router配置,重写push或者replace ​		 1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Vue-router@3 push 存在的警告错误">
 <meta property="og:url" content="http://example.com/2022/04/20/x%20title%20%E7%AC%AC%E4%B8%80%E6%AC%A1text/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于Vue-router@3 push 存在的警告错误​		编程式路由跳转到当前路由(参数不变)，多次执行会抛出NavigationDuplicated的错误警告  频繁点击搜索按钮  ![Snipaste_2022-04-20_22-42-29](x title 第一次text.assets&#x2F;Snipaste_2022-04-20_22-42-29.png)  原因分析 打印push方">
+<meta property="og:description" content="关于Vue-router@3 push 存在的警告错误​		编程式路由跳转到当前路由(参数不变)，多次执行会抛出NavigationDuplicated的错误警告  频繁点击搜索按钮 c   原因分析 打印push方法返回值    2.为什么会出现这种错误？ ​		因为promise需要成功或者失败的回调 3.最终解决方式 ​		在路由器router配置,重写push或者replace ​		 1">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/1.png">
-<meta property="og:image" content="http://example.com/2022/04/20/x%20title%20%E7%AC%AC%E4%B8%80%E6%AC%A1text/Users/86137/AppData/Roaming/Typora/typora-user-images/image-20220420221813279.png">
-<meta property="og:image" content="http://example.com/2022/04/20/x%20title%20%E7%AC%AC%E4%B8%80%E6%AC%A1text/Users/86137/AppData/Roaming/Typora/typora-user-images/image-20220420221938941.png">
+<meta property="og:image" content="http://example.com/images/2.png">
+<meta property="og:image" content="http://example.com/images/3.png">
+<meta property="og:image" content="http://example.com/images/4.png">
 <meta property="article:published_time" content="2022-04-20T13:42:46.885Z">
-<meta property="article:modified_time" content="2022-04-20T15:39:00.248Z">
+<meta property="article:modified_time" content="2022-04-20T15:45:32.197Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/1.png">
+<meta name="twitter:image" content="http://example.com/images/2.png">
     
     
       
@@ -147,14 +147,14 @@
     <h1 id="关于Vue-router-3-push-存在的警告错误"><a href="#关于Vue-router-3-push-存在的警告错误" class="headerlink" title="关于Vue-router@3 push 存在的警告错误"></a>关于Vue-router@3 push 存在的警告错误</h1><p>​		编程式路由跳转到当前路由(参数不变)，多次执行会抛出NavigationDuplicated的错误警告</p>
 <hr>
 <p><strong>频繁点击搜索按钮</strong></p>
-<p><img src="/images/1.png" alt="ss"></p>
-<p>![Snipaste_2022-04-20_22-42-29](x title 第一次text.assets&#x2F;Snipaste_2022-04-20_22-42-29.png)</p>
+<p>c</p>
+<p><img src="/images/2.png" alt="waring"></p>
 <hr>
 <h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><ol>
 <li><strong>打印push方法返回值</strong></li>
 </ol>
-<p><img src="/2022/04/20/x%20title%20%E7%AC%AC%E4%B8%80%E6%AC%A1text/Users\86137\AppData\Roaming\Typora\typora-user-images\image-20220420221813279.png" alt="image-20220420221813279"></p>
-<p><img src="/2022/04/20/x%20title%20%E7%AC%AC%E4%B8%80%E6%AC%A1text/Users\86137\AppData\Roaming\Typora\typora-user-images\image-20220420221938941.png" alt="image-20220420221938941"></p>
+<p><img src="/images/3.png" alt="ss"></p>
+<p><img src="/images/4.png" alt="ss"></p>
 <p>2.<strong>为什么会出现这种错误？</strong></p>
 <p>​		因为promise需要成功或者失败的回调</p>
 <p>3.<strong>最终解决方式</strong></p>
